@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css -->
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&family=Poppins:wght@100;300;500;600;700&family=Raleway:wght@400;700&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Ink Project</title>
+  </head>
+  <style>
+    body, h1, h2, p, a {
+  margin: 0;
+  padding: 0;
+}
+
+
+.wireframe {
+  background-color: #FFFAFB;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.content {
+  background-color: #FFF;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10);
+  border-radius: 5px;
+  padding: 40px 40px;
+}
+
+.logo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  justify-items: center;
+}
+
+.logo img {
+  display: block;
+}
+
+.logo h1 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.bem-vindo {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 25px;
+}
+
+.bem-vindo h2 {
+  margin-top: 100px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 110px;
+}
+
+.bem-vindo h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.bem-vindo p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  max-width: 50ch;
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+.svg {
+  margin-top: 0px;
+  max-width: 824px;
+  max-height: 320px;
+  justify-self: center;
+}
+.svg img {
+  display: block;
+  max-width: 100%;
+}
+
+.code {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+.code h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.warn {
+  margin-top: 30px;
+}
+
+.warn p {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.warn a {
+  text-decoration: none;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  margin-top: 40px;
+  max-width: fit-content;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
+  border-radius: 4px;
+}
+
+.footer h1 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+
+.store {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+.store-logo {
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+}
+
+.store-logo img {
+  display: block;
+  max-width: 100%;
+}
+
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.footer-content a {
+  text-decoration: none;
+}
+.footer-content p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  max-width: 50ch;
+  line-height: 25px;
+  text-align: center;
+}
+
+.footer-content p+p {
+  margin-top: 20px;
+}
+
+
+
+
+@media (max-width: 600px) {
+  .logo h1 {
+    font-size: 40px;
+  }
+
+  .bem-vindo h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .code h4 {
+    font-size: 20px;
+  }
+
+  .code p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    max-width: 25ch;
+    margin: 0 auto;
+  }
+
+  .code p+p {
+    max-width: 35ch;
+  }
+
+  .store-logo {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 380px) {
+  .bem-vindo h2 {
+    font-size: 35px;
+  }
+}
+
+  </style>
+  <body>
+    <main>
+      <section class="wireframe">
+        <div class="content container">
+          <div class="logo">
+            <img
+              src="./assets/icons8-máquina-de-tatuagem-64.png"
+              alt="Máquina de Tatuagem"
+              title="Máquina de Tatuagem"
+            />
+            <h1>Ink Project</h1>
+          </div>
+          <div class="bem-vindo">
+            <h2>Bem-vindo!</h2>
+            <h3>Olá, Marlon Poloni</h3>
+            <p>
+              Seja muito bem-vindo à nossa plataforma. Para continuar seu
+              acesso, insira o código abaixo em sua tela de verificação de
+              conta.
+            </p>
+          </div>
+          <div class="code">            
+            <h4>SEU CÓDIGO</h3>
+            <div class="svg">
+              <img src="./assets/undraw_ink.svg" alt="" />
+            </div>
+            <div class="warn">
+             <p><strong>Não foi você que criou esta conta na Ink Project?</strong></p>
+              <p>Avise-nos imediatamente <a href="#">clicando aqui.</a></p>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="store">
+              <h1>Baixe nosso APP</h1>
+              <div class="store-logo">
+                <a href="#"><img src="./assets/apple-store.svg" alt="Apple Store Logo"></a>
+                <a href="#"><img src="./assets/google-play.svg" alt="Google Play Logo"></a>
+              </div>
+            </div>
+            <div class="footer-content">
+              <p class="privacy">Você recebeu esta mensagem por se cadastrar na Ink Project. Se tiver alguma dúvida, acesse nossa <a href="#">Política de Privacidade</a>.</p>
+              <p class="address">
+                <a href="#">R. Adolfo André, 6969</a> - Caixa Postal 696969, Piracaia/SP
+              </p>
+              <p class="cnpj">INK PROJECT - CNPJ: 69.246.696-0001/69</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>
